@@ -13,8 +13,8 @@ class ConverterUI(QWidget):
         self.setWindowTitle("Video Converter")
         self.resize(900,600)
         
-        self.label1 = QLabel("Video Encoder")
-        self.label1.setAlignment(Qt.AlignmentFlag.AlignHCenter)
+        self.label1 = QLabel("MOD to MP4 Video Encoder")
+        self.label1.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.label1.setStyleSheet("font-size: 50px; font-weight: bold")
 
         self.label2 = QLabel("No file(s) selected")
@@ -89,7 +89,8 @@ class ConverterUI(QWidget):
         folder = QFileDialog.getExistingDirectory(self, "Select destination folder")
         if folder:
             self.output_folder = folder
-            self.label5.setText(os.path.basename(folder))
+            label_5_text = "Save to: " + os.path.basename(folder) 
+            self.label5.setText(label_5_text)
             self.convert_btn.setEnabled(True)
 
     def convert_video(self):
