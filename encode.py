@@ -25,7 +25,7 @@ class ConverterUI(QWidget):
         self.label3.setAlignment(Qt.AlignmentFlag.AlignHCenter)
         self.label3.setStyleSheet("color: gray; font-size: 12px; font-weight: bold")
         
-        self.label4 = QLabel("v 0.1.0")
+        self.label4 = QLabel("v 1.0.0")
         self.label4.setAlignment(Qt.AlignmentFlag.AlignHCenter)
         self.label4.setStyleSheet("color: gray; font-size: 12px; font-weight: bold")
 
